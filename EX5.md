@@ -20,10 +20,24 @@
 ![image](https://github.com/gpavana/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/118787343/06a11142-1441-4272-afe4-806aaa3c9d9d)
 
 ### PLSQL Trigger code:
-
-
+```
+create or replace trigger log_salary_update
+before update on employee 
+for each row
+declare
+v_old_salary NUMBER;
+v_new_salary NUMBER;
+begin
+v_old_salary:= :old.salary;
+v_new_salary:= :new.salary;
+if v_old_salary <> v_new_salary then
+insert into salary_log(empid, empname, old_salary, new_salary, update_date)
+values(:old.empid, :old.empname, v_old_salary, v_new_salary, SYSDATE); ;
+end if 
+end;
+/
+```
 ### Output:
-
-
+![EX-NO-5-CREATING-TRIGGERS-USING-PL-SQL](trigger.png)
 ### Result:
 A trigger is successfully created .
