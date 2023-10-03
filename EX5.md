@@ -13,12 +13,17 @@
 8. Display the employee table, salary_log table.
 
 ### Program:
-### Create employee table
+### Create employee table:
+![image](https://github.com/gpavana/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/118787343/8c7d11f7-9381-46ae-9e9c-cc5c16f9f8ab)
 
-### Create salary_log table
+### Create salary_log table:
+![image](https://github.com/gpavana/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/118787343/06a11142-1441-4272-afe4-806aaa3c9d9d)
 
-### PLSQL Trigger code
+### PLSQL Trigger code:
+
 
 ### Output:
 
+
 ### Result:
+A trigger is successfully created .
