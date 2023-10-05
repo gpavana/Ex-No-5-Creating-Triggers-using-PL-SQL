@@ -14,10 +14,14 @@
 
 ### Program:
 ### Create employee table:
-![image](https://github.com/gpavana/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/118787343/8c7d11f7-9381-46ae-9e9c-cc5c16f9f8ab)
+```
+create table employee(empid int,empname char(20),dept char(20),salary int);
+```
 
 ### Create salary_log table:
-![image](https://github.com/gpavana/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/118787343/06a11142-1441-4272-afe4-806aaa3c9d9d)
+```
+Create salary_log table with following attributes (log_id NUMBER GENERATED ALWAYS AS IDENTITY, empid NUMBER,empname VARCHAR(10),old_salary NUMBER,new_salary NUMBER,update_date DATE);
+```
 
 ### PLSQL Trigger code:
 ```
